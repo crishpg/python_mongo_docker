@@ -1,0 +1,6 @@
+Buildar a image
+docker build -t my-python-app .
+executar a imagem que acabou de ser buildada
+alterar um arquivo e realizar o build
+apos o build executar o comando abaixo para executar a console
+docker run -it --rm --name my-running-app my-python-app
