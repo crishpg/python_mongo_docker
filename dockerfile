@@ -8,3 +8,5 @@ EXPOSE 27017
 COPY . .
 COPY daemon.py /usr/src/app
 CMD [ "python", "./daemon.py" ]
+
+ 
