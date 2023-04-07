@@ -15,3 +15,7 @@ $ docker run -it --rm --name my-running-app my-python-app
 ##Links de referencia
 https://kb.objectrocket.com/mongo-db/use-docker-and-python-for-a-mongodb-application-1046
 
+##Indentificar ip da imagem docker mongodb
+docker inspect \
+  -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' container_name_or_id
+
