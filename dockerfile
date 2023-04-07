@@ -8,5 +8,8 @@ EXPOSE 27017
 COPY . .
 COPY daemon.py /usr/src/app
 CMD [ "python", "./daemon.py" ]
+COPY Insert_fake_customers.py /usr/src/app
+CMD [ "python","./Insert_fake_customers.py" ]
+
 
  
