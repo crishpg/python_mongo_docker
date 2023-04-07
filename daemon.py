@@ -1,9 +1,10 @@
 import pymongo
+from faker import Faker
    
    
 # establishing connection
 # to the database
-client = pymongo.MongoClient("mongodb://172.17.0.3:27017/")
+client = pymongo.MongoClient("mongodb://172.17.0.2:27017/")
    
 # Database name
 db = client["meudb"]
